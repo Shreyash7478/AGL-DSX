@@ -1,4 +1,4 @@
-# C++ implementation of various datastructures.
+# C++ implementation of various Algorithm datastructures.
 
 ## Node
 ### General Purpose Node Module
