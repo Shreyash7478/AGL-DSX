@@ -29,9 +29,14 @@ void CircularLinkedList::insertAtEnd(int data){
 }
 
 void CircularLinkedList::deleteAtStart(){
+    if(isEmpty()){
+        return;
+    }
     if(tail->next == tail){
-        delete(tail);
+        node *temp = tail;
         tail =  NULL;
+        delete(temp);
+        return;
     }
     node *temp = tail->next;
     tail->next = temp->next;
@@ -46,6 +51,9 @@ int CircularLinkedList::front(){
 }
 
 void CircularLinkedList::display(){
+    if(isEmpty()){
+        return;
+    }
     node *temp = tail;
     std::cout<<"HEAD";
     do{
