@@ -97,3 +97,11 @@ void AdjacencyMatrix::display(){
         std::cout<<"\n";
     }
 }
+
+adjnode* AdjacencyMatrix::getBucketHead(int i){
+    struct bucket *get_bucket = getBucket(i);
+    if(get_bucket == NULL){
+        return NULL;
+    }
+    return get_bucket->head->next;
+}

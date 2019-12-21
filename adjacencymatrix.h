@@ -11,6 +11,7 @@ class AdjacencyMatrix{
         struct bucket *buckets_head;
         bucket* addGetBucket(int);
         bucket* getBucket(int);
+        adjnode* getBucketHead(int);
         adjnode* getNode(bucket*, int);
         void addNode(bucket*,int,int);
 
@@ -20,7 +21,8 @@ class AdjacencyMatrix{
         int get(int,int);
         void remove(int);
         void display();
-        
+
+        friend class DirectedGraph;  
 };
 
 #endif //ADJACENCYMATRIX_H
