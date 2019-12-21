@@ -20,3 +20,16 @@ class DirectedGraph{
 };
 
 #endif //GRAPH_H
+
+
+/*
+Graph 
+void addEdge(int,int,int distance = 1) : adds edge between given two nodes with distance given as third parameter. 
+void showEdges() : displays all edges
+void breadthFirstSearch(int) :  BFS of the graph with start vertix as given parameter.
+void depthFirstSearch(int) : DFS of graph with start vertix as given parameter.
+
+
+
+
+*/
