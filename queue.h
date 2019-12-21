@@ -17,6 +17,7 @@ class Queue{
         void enqueue(int);
         int peek();
         bool is_empty();
+        void display();
 };
 
 #endif

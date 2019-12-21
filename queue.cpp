@@ -4,7 +4,7 @@
 
 
 bool Queue::is_empty(){
-    return container == NULL;
+    return container->isEmpty();
 }
 
 void Queue::dequeue(){
@@ -21,4 +21,8 @@ Queue::Queue(){
 
 int Queue::peek(){
     return container->front();
+}
+
+void Queue::display(){
+    container->display();
 }
